@@ -1,0 +1,283 @@
+body {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.1)  
+        ), url(media/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+/*BARRA SUPERIOR*/
+.barra_superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25px;
+    align-items: center;
+    padding-top: 2px;
+}
+/*BOX REDES*/
+
+.box_redes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 200px;
+    align-items: center;
+}
+.box_redes i {
+    width: 20px;
+    height: 20px;
+}
+.tripadvisor {
+    background-image: url(media/tripadvisor.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+}
+/*BOX IDIOMAS*/
+
+.box_idiomas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80px;
+}
+.box_idiomas a{
+    text-decoration: none;
+    color: white;
+}
+
+/*BARRA DE NAV*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding-left: 10px;
+}
+
+/*LOGO*/
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo p {
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-size: small;
+    padding-top: 30px;
+   /*  padding-left: 5px; */
+}
+.titulo {
+    background-image: url(media/logo-rumbo-a-picos-m-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 98px;
+    padding-left: 10px;
+    width: 100v;
+}
+/*NAVBAR*/
+
+.nav_bar ul {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    list-style: none;
+    padding-right: 15px;
+}
+.nav_bar a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+#contacto{
+    width: 100px;
+    height: 18px;
+    padding: 13px 28px;
+    border: 2px white solid;
+}
+/*SECTION*/
+
+/*TEXT*/
+.text {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 150px 280px;
+    padding-bottom: 50px;
+}
+.text h1 {
+   margin-bottom: 10px;
+   font-family: 'Raleway', sans-serif;
+   letter-spacing: 2px;
+}
+.text h6 {
+    margin-top: 5px;
+    font-family: 'Instrument Serif', serif;
+    font-weight: 50;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+/*BARRA INFERIOR*/
+.barra_inferior ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.barra_inferior ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(231, 231, 229);
+    width: 150px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    font-size: 16px;
+}
+.barra_inferior ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.barra_inferior ul li a span {
+    padding: 6px;
+    color: black;
+}
+input {
+    width: 150px;
+    height: 30px;
+}
+.input {
+    background-color: rgb(231, 231, 229);
+    font-size: 16px;
+    border: none;
+    width: 150px;
+    height: 40px;
+}
+.input:hover {
+    background-color: rgb(228, 206, 116);    
+}
+
+@media (max-width: 844px){
+    body {
+        background-image: block;
+        background-color: aqua;
+        margin: 0;
+    }
+
+    /*BARRA DE NAV*/
+    nav {
+    display: flex;
+    flex-direction: column;
+    }
+
+    /*LOGO*/
+    .logo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+    }
+    .logo p {
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-size: small;
+    padding-top: 0px;
+    padding-left: 0px;
+    text-align: center;
+    }
+    .titulo {
+    background-image: url(media/logo-rumbo-a-picos-m-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 98px;
+    padding-left: 10px;
+    width: 100v;
+    }   
+
+
+    /*NAVBAR*/
+    .nav_bar ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 390px;
+    height: 180px;
+    font-size: 16px;
+    list-style: none;
+    padding-left: 0px;
+    }
+
+    .nav_bar a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px; 
+    padding: 5px;    
+
+    }
+    #contacto{
+    width: 100px;
+    height: 18px;
+    padding: 13px 28px;
+    border: 2px white solid;
+  
+    }
+
+    /*TEXT*/
+    .text {
+    text-align: center;
+    color: white;
+    font-size: initial;
+    padding: 300px 0px;
+    padding-bottom: 0px;
+    }
+
+    /*BARRA INFERIOR*/
+    .barra_inferior ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    }
+    .barra_inferior ul li {
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        width: 200px;
+    }
+    input {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    .input {
+        width: 160px;
+        margin-top: 5px;
+    }
+}
